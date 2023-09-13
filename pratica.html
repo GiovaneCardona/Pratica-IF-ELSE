@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Votos da eleição!!</h1>
+
+    <span>Votos Cleitin <input type="number"  id="input_candidato1"></span><br>
+    <span>Votos Zezin <input type="number" id="input_candidato2"></span><br>
+    <span>Total votos em branco <input type="number" id="input_votosbranco"></span><br>
+    <span>Total votos nulos <input type="number" id="input_votosnulo"></span><br>
+    
+    <button onclick="ver_resultado()" >Resultado da eleição</button> <br>
+
+<div id="div_algumacoisa" ></div>
+
+</body>
+</html>
+
+<script>
+   
+
+function ver_resultado(){
+    var candidato1 = Number(input_candidato1.value);
+    var candidato2 = Number(input_candidato2.value);
+    var Voto_Branco = Number(input_votosbranco.value);
+    var Voto_nulo = Number(input_votosnulo.value);
+    var Votos_totais = candidato1 + candidato2 + Voto_Branco + Voto_nulo;
+    var invalido = (Voto_Branco + Voto_nulo)*100/Votos_totais;
+    var votos_cleitin = candidato1 * 100 / Votos_totais;
+    var votos_zezin = candidato2 * 100 / Votos_totais;
+ 
+    
+div_algumacoisa.innerHTML = `
+Total de votos: <u>${Votos_totais}  </u><br>
+Candidato 1: ${votos_cleitin.toFixed(0)}% (${candidato1} Votos)<br>
+Candidato 2: ${votos_zezin.toFixed(0)}% (${candidato2} Votos)<br>
+Inválidos: ${invalido.toFixed(0)}% (${Voto_Branco + Voto_nulo} Votos )
+
+
+`
+}
+
+
+</script>

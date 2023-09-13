@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Seu nome:<br>
+    <input type="text" id="input_nome"><br>
+    Sua Idade:<br>
+    <input type="number" id="input_idade"><br>
+    <button onclick="verIdade()">Avaliar aluno</button><br>
+    <div id="exibir"></div>
+</body>
+
+</html>
+<script>
+    function verIdade() {
+        var nome = input_nome.value
+        var idade = Number(input_idade.value)
+        if (idade >= 18) {
+            exibir.innerHTML = `${nome} vamos tirar a CNH?`
+        } else {
+            exibir.innerHTML = `${nome} vai jogar PlayStation!`
+        }
+    }
+</script>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nome do guerreiro: <input id= "nomeguerreiro" type="text"> <br>
+    Seu ki normal: <input id="KI" type="number"><br>
+    <button onclick="VerKI()">Ver ki em cada forma</button>
+    
+</body>
+</html>
+<script>
+function VerKI() {
+valor1 = (Number(KI.value) * 50);
+valor2 = (Number(KI.value) * 100); 
+alert(`SUPER SAYAJIN
+  O ${(nomeguerreiro.value)} tem ${valor1} de ki`);
+alert(`SUPER SAYAJIN 2 
+O ${(nomeguerreiro.value)} tem ${valor2} de ki`);}
+
+
+</script>

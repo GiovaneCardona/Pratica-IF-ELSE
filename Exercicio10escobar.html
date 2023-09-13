@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <span>Login:</span><br>
+    <input type="text" id="input_login"><br>
+    <span>Senha:</span><br>
+    <input type="password" id="input_senha"><br>
+    <button onclick="entrar()">Fazer login</button>
+    <div id="exibir"></div>
+</body>
+</html>
+<script>
+    function entrar() {
+        var login = input_login.value
+        var senha = input_senha.value
+
+        if (login == 'useraluno') {
+            if (senha == '12345') {
+
+                exibir.innerHTML = `Parabéns! Usuário autenticado com sucesso`
+
+            }
+        }
+        else {
+            exibir.innerHTML = `Usuário ou senha incorretos, tente novamente.`
+        }
+    }
+
+
+
+
+</script>

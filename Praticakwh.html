@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <span>Consumo KWH do mês <input id="input_kwhmes"></span><br>
+
+    <button onclick="calcularconta()">Calcular conta de luz</button>
+
+</body>
+
+</html>
+<script>
+    function calcularconta() {
+        var consumomes = Number(input_kwhmes.value)
+        if (consumomes <100){
+        var valorOriginal = consumomes * 0.85
+        var valordesc = (valorOriginal *10)/100
+        var resultado = valorOriginal - valordesc
+        
+        alert("Valor da conta a ser paga é de: R$" + (resultado));
+
+        }
+        if (consumomes >= 100){
+        var resultado = consumomes * 0.85
+        alert("Valor da conta a ser paga é de R$" + (resultado));
+
+
+
+        }
+
+    }
+
+
+
+
+
+</script>

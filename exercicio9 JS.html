@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+Nota continuada: <input id = "NC" type="number"> <br>
+Nota semestral: <input id = "NS" type="number"> <br>
+Seu nome: <input id = "seunome" type="text"> <br>
+<button onclick = "CalcularMédia()" >Analisar média</button>
+    
+</body>
+</html>
+<script>
+
+    function CalcularMédia() {
+    resultado = (NC.value*40)/100 + (NS.value*60)/100;
+    alert (`A média de ${(seunome.value)} será de ${resultado}`);}
+
+    
+
+
+
+</script>
+
+

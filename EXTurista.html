@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Sua frequência:<br>
+    <input type="text" id="input_frequencia"><br>
+    <button onclick="analisar()">Analisar frequência</button><br>
+    <div id="imagem"></div>
+</body>
+
+</html>
+<script>
+    function analisar() {
+        var frequencia = Number(input_frequencia.value);
+
+        if (frequencia < 50) {
+            imagem.innerHTML = `<img src="https://img.freepik.com/fotos-gratis/turista-que-corre-rapido_1368-7021.jpg"/>`
+
+        } else {
+            imagem.innerHTML = `<img src = "https://nosbastidores.com.br/wp-content/uploads/2019/12/nerd-768x432.jpg"/>`
+
+        }
+    }
+
+
+
+</script>
